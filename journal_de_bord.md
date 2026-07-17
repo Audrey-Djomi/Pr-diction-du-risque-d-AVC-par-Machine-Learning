@@ -32,20 +32,34 @@
 
 ## Difficultés rencontrées et ce que j'ai appris jusqu'ici:
 
-Conflit d'authentification GitHub résolu.
-Restructuration de l'environnement virtuel afin d'adopter une organisation plus professionnelle.
-Utiliser un fichier requirements.txt,
-Mettre en place un .gitignore,
-Structurer un projet Machine Learning selon les bonnes pratiques.
+- Conflit d'authentification GitHub résolu.
+- Restructuration de l'environnement virtuel afin d'adopter une organisation plus professionnelle.
+- Utiliser un fichier requirements.txt,
+- Mettre en place un .gitignore,
+- Structurer un projet Machine Learning selon les bonnes pratiques.
 
 ## Réflexion
 Les premières observations montrent que le jeu de données est relativement propre. La seule variable présentant des valeurs manquantes est l'IMC (bmi), avec environ 3,9 % de données absentes. Avant d'entraîner un modèle de Machine Learning, il sera nécessaire de déterminer la stratégie la plus adaptée pour traiter ces valeurs manquantes afin de limiter leur impact sur les performances du modèle.
 
-# Analyse prévue pour la prochaine séance
-Analyse des valeurs manquantes,
-Recherche de doublons,
-Étude de la variable cible stroke
-comparer avec notre dataset processed
-Analyse des distributions
-Premières visualisations
-Étude des corrélations
+# Jour 4: Fin EDA et Début Analyse orientée Machine Learning
+- Analyse des valeurs manquantes,
+- Recherche de doublons,
+- comparer avec notre dataset processed
+- Analyse des distributions : Contrairement au Projet 2, l'exploration est réalisée dans une logique de préparation des données pour l'entraînement des modèles.
+Les premières analyses ont porté sur :
+
+l'étude de la variable cible (stroke),
+la mise en évidence du fort déséquilibre entre les classes,
+l'identification des variables numériques et catégorielles,
+la définition des futurs prétraitements (encodage, standardisation, aucune action),
+la réalisation d'une première matrice de corrélation des variables numériques.
+- Premières visualisations
+- Étude des corrélations
+
+## Difficultés rencontrées
+- Comprendre la différence entre une analyse exploratoire classique et une exploration orientée Machine Learning.
+- Réfléchir aux prétraitements nécessaires avant l'entraînement des modèles.
+
+## Pour la suite 
+Nous passons d'un projet d'analyse descriptive à un projet prédictif. Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
+
