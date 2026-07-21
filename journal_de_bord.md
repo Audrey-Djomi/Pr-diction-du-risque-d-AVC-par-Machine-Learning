@@ -60,6 +60,21 @@ la réalisation d'une première matrice de corrélation des variables numérique
 - Comprendre la différence entre une analyse exploratoire classique et une exploration orientée Machine Learning.
 - Réfléchir aux prétraitements nécessaires avant l'entraînement des modèles.
 
+# Jour 5 : début analyse des variables numériques et des variables catégorielles
+- visualisations des variables numériques: distribution et boxplot
+- visualisations des variables catégorielles: histogrammes 
+
+# Jour 6: Interprétation des résultats d'analyses des variables 
+Cette première exploration orientée Machine Learning met en évidence plusieurs caractéristiques importantes du jeu de données. 
+
+- La variable cible présente un fort déséquilibre entre les classes, ce qui nécessitera l'utilisation de techniques adaptées lors de l'entraînement des modèles. 
+
+- Les variables numériques présentent des distributions asymétriques et plusieurs valeurs extrêmes, cohérentes avec un contexte médical, qui seront conservées. 
+
+- Les variables catégorielles sont globalement bien représentées, bien que certaines modalités très rares devront être examinées lors du prétraitement. 
+
+Cette étape nous a permis de définir les transformations nécessaires avant la construction des modèles prédictifs.
+
 ## Pour la suite 
 Nous passons d'un projet d'analyse descriptive à un projet prédictif. Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
 
