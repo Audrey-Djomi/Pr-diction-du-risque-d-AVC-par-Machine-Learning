@@ -75,6 +75,14 @@ Cette première exploration orientée Machine Learning met en évidence plusieur
 
 Cette étape nous a permis de définir les transformations nécessaires avant la construction des modèles prédictifs.
 
+# Jour 7: Prétraitement
+
+- Importation des bibliothèques nécessaires au prétraitement,
+- Chargement du jeu de données brut,
+- Suppression de la colonne id, considérée comme un identifiant sans valeur prédictive,
+- Séparation des variables explicatives (X) et de la variable cible (y),
+- Vérification des dimensions des jeux de données.
+
 ## Pour la suite 
-Nous passons d'un projet d'analyse descriptive à un projet prédictif. Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
+Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
 
