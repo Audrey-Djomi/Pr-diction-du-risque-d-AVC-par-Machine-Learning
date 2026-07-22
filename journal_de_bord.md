@@ -80,8 +80,27 @@ Cette étape nous a permis de définir les transformations nécessaires avant la
 - Importation des bibliothèques nécessaires au prétraitement,
 - Chargement du jeu de données brut,
 - Suppression de la colonne id, considérée comme un identifiant sans valeur prédictive,
-- Séparation des variables explicatives (X) et de la variable cible (y),
+- Séparation des variables explicatives (X à 80 %) et de la variable cible (y à 20 %) à l'aide de train_test_split,
+- Conservation de la proportion des classes grâce au paramètre stratify, afin de préserver le déséquilibre initial entre les patients avec et sans AVC.
 - Vérification des dimensions des jeux de données.
+
+Nous observons aussi que nous avons toujours les données manquantes dans notre dataset.
+Rappelons que nous travaillons sur notre dataset brut et pas celui néttoyé qui provient de notre projet 2.
+
+Nous allons y révenir!.
+
+# Jour 8: Suite Prétraitement
+
+- Identification des variables numériques, catégorielles et binaires pour préparer les futurs traitements,
+- Gestion des valeurs manquantes de la variable bmi par imputation de la médiane calculée uniquement sur le jeu d'entraînement, puis application de cette valeur au jeu de test afin d'éviter toute fuite d'information (data leakage),
+- Vérification de l'absence de valeurs manquantes après l'imputation.
+
+Compétences développées
+
+Compréhension de l'importance du découpage Train/Test,
+Prévention des fuites d'information lors du prétraitement,
+Organisation des variables selon leur nature pour préparer les transformations adaptées,
+Application des bonnes pratiques de préparation des données en Machine Learning.
 
 ## Pour la suite 
 Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
