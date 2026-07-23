@@ -102,6 +102,18 @@ Prévention des fuites d'information lors du prétraitement,
 Organisation des variables selon leur nature pour préparer les transformations adaptées,
 Application des bonnes pratiques de préparation des données en Machine Learning.
 
+# Jour 9: Suite Prétraitement
+
+- Choix du One-Hot Encoding afin d'éviter la création d'un ordre artificiel entre les catégories,
+- Apprentissage des catégories uniquement sur le jeu d'entraînement (fit), puis application de la transformation au jeu de test (transform) afin d'éviter toute fuite d'information,
+- Conversion des variables catégorielles en variables numériques binaires (0/1),
+- transformation de nos données encodées en dataframe.
+
+Compétences développées
+
+- Compréhension des techniques d'encodage des variables catégorielles,
+- Distinction entre fit et transform.
+
 ## Pour la suite 
 Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
 
