@@ -107,12 +107,21 @@ Application des bonnes pratiques de préparation des données en Machine Learnin
 - Choix du One-Hot Encoding afin d'éviter la création d'un ordre artificiel entre les catégories,
 - Apprentissage des catégories uniquement sur le jeu d'entraînement (fit), puis application de la transformation au jeu de test (transform) afin d'éviter toute fuite d'information,
 - Conversion des variables catégorielles en variables numériques binaires (0/1),
-- transformation de nos données encodées en dataframe.
+- transformation de nos données encodées en dataframe,
+- Fusion des variables numériques, binaires et catégorielles encodées afin de constituer le jeu de données final destiné à l'entraînement des modèles,
+- Vérification des dimensions et de la cohérence du dataset final,
+- Standardisation des variables numériques (age, avg_glucose_level, bmi) avec StandardScaler,
+- Apprentissage du scaler sur le jeu d'entraînement uniquement (fit_transform) puis application au jeu de test (transform) afin d'éviter toute fuite de données,
+- Vérification de la transformation des variables numériques.
+
 
 Compétences développées
 
 - Compréhension des techniques d'encodage des variables catégorielles,
-- Distinction entre fit et transform.
+- Distinction entre fit et transform,
+- Construction d'un jeu de données entièrement numérique adapté aux algorithmes de Machine Learning.
+- Compréhension de l'importance de la mise à l'échelle des données
+- Préparation des données pour des modèles sensibles à l'échelle des variables
 
 ## Pour la suite 
 Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
