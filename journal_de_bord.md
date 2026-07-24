@@ -123,19 +123,24 @@ Compétences développées
 - Analyse du déséquilibre des classes de la variable cible (stroke),
 - Utiliser la technique SMOTE pour équilibrer les classes du jeu d'entraînement,
 - Vérification de la nouvelle distribution des classes après rééchantillonnage,
-- Finalisation du pipeline de prétraitement des données.
+- Création d'une copie du jeu de données nettoyé afin de préserver les données d'origine,
+- Début de la création de nouvelles variables basées sur des facteurs de risque médicaux (âge, glycémie et risque cardiovasculaire).
+- Création de variables dérivées à partir des connaissances métier (senior, high_glucose, cardio_risk), 
+- Analyse de la distribution de ces nouvelles variables,
+- Évaluation de leur relation avec la variable cible (stroke) par tableaux croisé.
 
 Compétences développées
 
-- Gestion des jeux de données déséquilibrés.
-- Utilisation de la bibliothèque imbalanced-learn.
+- Gestion des jeux de données déséquilibrés
+- Utilisation de la bibliothèque imbalanced-learn
 - Compréhension de la différence entre sur-échantillonnage classique et génération synthétique d'observations,
-- Création d'une copie du jeu de données nettoyé afin de préserver les données d'origine,
-- Début de la création de nouvelles variables basées sur des facteurs de risque médicaux (âge, glycémie et risque cardiovasculaire).
-- Construction d'un pipeline complet de préparation des données.
-
-
+- Application du Feature Engineering basé sur les connaissances métier
+- Création de variables binaires à partir de seuils cliniques
+- Analyse de la pertinence de nouvelles variables avant leur intégration au modèle
+- Application du Feature Engineering basé sur les connaissances métier
+- Création de variables binaires à partir de seuils cliniques
+- Analyse de la pertinence de nouvelles variables avant leur intégration au modèle.
 
 ## Pour la suite 
-Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
+Les prochaines étapes consisteront à la construction d'un pipeline complet de préparation des données.
 
