@@ -81,19 +81,14 @@ Cette étape nous a permis de définir les transformations nécessaires avant la
 - Chargement du jeu de données brut,
 - Suppression de la colonne id, considérée comme un identifiant sans valeur prédictive,
 - Séparation des variables explicatives (X à 80 %) et de la variable cible (y à 20 %) à l'aide de train_test_split,
-- Conservation de la proportion des classes grâce au paramètre stratify, afin de préserver le déséquilibre initial entre les patients avec et sans AVC.
-- Vérification des dimensions des jeux de données.
-
-Nous observons aussi que nous avons toujours les données manquantes dans notre dataset.
-Rappelons que nous travaillons sur notre dataset brut et pas celui néttoyé qui provient de notre projet 2.
-
-Nous allons y révenir!.
-
-# Jour 8: Suite Prétraitement
-
+- Conservation de la proportion des classes grâce au paramètre stratify, afin de préserver le déséquilibre initial entre les patients avec et sans AVC,
+- Vérification des dimensions des jeux de données,
 - Identification des variables numériques, catégorielles et binaires pour préparer les futurs traitements,
 - Gestion des valeurs manquantes de la variable bmi par imputation de la médiane calculée uniquement sur le jeu d'entraînement, puis application de cette valeur au jeu de test afin d'éviter toute fuite d'information (data leakage),
 - Vérification de l'absence de valeurs manquantes après l'imputation.
+
+Nous avons observé que nous avions toujours les données manquantes dans notre dataset,
+Rappelons que nous travaillons sur notre dataset brut et pas celui néttoyé qui provient de notre projet 2.
 
 Compétences développées
 
@@ -102,7 +97,7 @@ Prévention des fuites d'information lors du prétraitement,
 Organisation des variables selon leur nature pour préparer les transformations adaptées,
 Application des bonnes pratiques de préparation des données en Machine Learning.
 
-# Jour 9: Suite Prétraitement
+# Jour 8: Suite Prétraitement
 
 - Choix du One-Hot Encoding afin d'éviter la création d'un ordre artificiel entre les catégories,
 - Apprentissage des catégories uniquement sur le jeu d'entraînement (fit), puis application de la transformation au jeu de test (transform) afin d'éviter toute fuite d'information,
@@ -122,6 +117,22 @@ Compétences développées
 - Construction d'un jeu de données entièrement numérique adapté aux algorithmes de Machine Learning.
 - Compréhension de l'importance de la mise à l'échelle des données
 - Préparation des données pour des modèles sensibles à l'échelle des variables
+
+# Jour 9: Fin prétraitement 
+
+- Analyse du déséquilibre des classes de la variable cible (stroke),
+- Utiliser la technique SMOTE pour équilibrer les classes du jeu d'entraînement,
+- Vérification de la nouvelle distribution des classes après rééchantillonnage,
+- Finalisation du pipeline de prétraitement des données.
+
+Compétences développées
+
+- Gestion des jeux de données déséquilibrés.
+- Utilisation de la bibliothèque imbalanced-learn.
+- Compréhension de la différence entre sur-échantillonnage classique et génération synthétique d'observations,
+- Construction d'un pipeline complet de préparation des données.
+
+
 
 ## Pour la suite 
 Les prochaines étapes consisteront à préparer les données pour l'entraînement des modèles de Machine Learning.
