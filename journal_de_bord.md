@@ -118,7 +118,7 @@ Compétences développées
 - Compréhension de l'importance de la mise à l'échelle des données
 - Préparation des données pour des modèles sensibles à l'échelle des variables
 
-# Jour 9: Fin prétraitement 
+# Jour 9: Fin prétraitement  et début construction de notre pipeline dans le fichier feature_engineering
 
 - Analyse du déséquilibre des classes de la variable cible (stroke),
 - Utiliser la technique SMOTE pour équilibrer les classes du jeu d'entraînement,
@@ -130,6 +130,8 @@ Compétences développées
 - Gestion des jeux de données déséquilibrés.
 - Utilisation de la bibliothèque imbalanced-learn.
 - Compréhension de la différence entre sur-échantillonnage classique et génération synthétique d'observations,
+- Création d'une copie du jeu de données nettoyé afin de préserver les données d'origine,
+- Début de la création de nouvelles variables basées sur des facteurs de risque médicaux (âge, glycémie et risque cardiovasculaire).
 - Construction d'un pipeline complet de préparation des données.
 
 
