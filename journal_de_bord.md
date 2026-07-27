@@ -141,6 +141,14 @@ Compétences développées
 - Création de variables binaires à partir de seuils cliniques
 - Analyse de la pertinence de nouvelles variables avant leur intégration au modèle.
 
+# Jour 10: Features Engineering
+- Encodage des variables catégorielles,
+- Utilisation de la méthode mutual information,
+- Calcul du score de chaque variable
+- graphique représentatif des variables et leur différents scores
+- Analyses de la pertinence d'information de chaque variable sur la cible "stroke"
+
 ## Pour la suite 
-Les prochaines étapes consisteront à la construction d'un pipeline complet de préparation des données.
+Les prochaines étapes consisteront à la construction d'un pipeline complet de préparation des données et d'appliquer nos variables à différents modèles de machine learning.
+
 
