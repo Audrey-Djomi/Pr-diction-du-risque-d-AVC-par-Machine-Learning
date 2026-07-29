@@ -148,6 +148,13 @@ Compétences développées
 - graphique représentatif des variables et leur différents scores
 - Analyses de la pertinence d'information de chaque variable sur la cible "stroke"
 
+# Jour 11: Model training
+- Exportation du df_features dans le fichier 04_model_training
+- Après avoir vérifié que le dataset issu du Feature Engineering ne contenait ni valeurs manquantes ni doublons, séparation des données en jeux d'entraînement et de test (80/20). 
+- Encodage des variables catégorielles à l'aide de OneHotEncoder (drop="first" et handle_unknown="ignore"), en appliquant fit_transform() sur le jeu d'entraînement et transform() sur le jeu de test afin d'éviter toute fuite de données. 
+- Vérification de la bonne création des nouvelles variables binaires et de l'absence de valeurs manquantes après l'encodage.
+
+
 ## Pour la suite 
 Les prochaines étapes consisteront à la construction d'un pipeline complet de préparation des données et d'appliquer nos variables à différents modèles de machine learning.
 
