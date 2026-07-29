@@ -150,9 +150,13 @@ Compétences développées
 
 # Jour 11: Model training
 - Exportation du df_features dans le fichier 04_model_training
-- Après avoir vérifié que le dataset issu du Feature Engineering ne contenait ni valeurs manquantes ni doublons, séparation des données en jeux d'entraînement et de test (80/20). 
-- Encodage des variables catégorielles à l'aide de OneHotEncoder (drop="first" et handle_unknown="ignore"), en appliquant fit_transform() sur le jeu d'entraînement et transform() sur le jeu de test afin d'éviter toute fuite de données. 
-- Vérification de la bonne création des nouvelles variables binaires et de l'absence de valeurs manquantes après l'encodage.
+- Après avoir vérifié que le dataset issu du Feature Engineering ne contenait ni valeurs manquantes ni doublons, séparation des données en jeux d'entraînement et de test (80/20), 
+- Encodage des variables catégorielles à l'aide de OneHotEncoder (drop="first" et handle_unknown="ignore"), en appliquant fit_transform() sur le jeu d'entraînement et transform() sur le jeu de test afin d'éviter toute fuite de données,
+- Vérification de la bonne création des nouvelles variables binaires et de l'absence de valeurs manquantes après l'encodage,
+- Préparation finale des données pour l'entraînement des modèles,
+- Concaténation des variables catégorielles encodées, des variables continues standardisées et des variables binaires afin d'obtenir un dataset de 18 variables explicatives,
+- Application de SMOTE sur le jeu d'entraînement uniquement afin d'équilibrer les classes (3888 observations par classe),
+- Début de la phase de modélisation avec l'entraînement d'un premier modèle, la Régression Logistique, qui servira de modèle de référence (baseline) pour les comparaisons futures.
 
 
 ## Pour la suite 
