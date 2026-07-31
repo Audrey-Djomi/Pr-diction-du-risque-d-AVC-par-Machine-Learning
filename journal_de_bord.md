@@ -148,7 +148,7 @@ Compétences développées
 - graphique représentatif des variables et leur différents scores
 - Analyses de la pertinence d'information de chaque variable sur la cible "stroke"
 
-# Jour 11: Model training
+# Jour 11: Préparation finale des données
 - Exportation du df_features dans le fichier 04_model_training
 - Après avoir vérifié que le dataset issu du Feature Engineering ne contenait ni valeurs manquantes ni doublons, séparation des données en jeux d'entraînement et de test (80/20), 
 - Encodage des variables catégorielles à l'aide de OneHotEncoder (drop="first" et handle_unknown="ignore"), en appliquant fit_transform() sur le jeu d'entraînement et transform() sur le jeu de test afin d'éviter toute fuite de données,
@@ -158,8 +158,22 @@ Compétences développées
 - Application de SMOTE sur le jeu d'entraînement uniquement afin d'équilibrer les classes (3888 observations par classe),
 - Début de la phase de modélisation avec l'entraînement d'un premier modèle, la Régression Logistique, qui servira de modèle de référence (baseline) pour les comparaisons futures.
 
+# Jour 12: Entraînement du premier modèle de classification : Régression Logistique.
+
+- Résultats obtenus
+    - Accuracy : 71,4 %
+    - Recall (classe AVC) : 82 %
+    - Precision (classe AVC) : 13 %
+    - F1-score (classe AVC) : 22 %
+
+La Régression Logistique détecte correctement la majorité des patients présentant un AVC avec un Recall élevé, ce qui est un point essentiel dans un contexte médical où il est préférable de limiter les faux négatifs. En revanche, la précision reste faible, ce qui traduit un nombre important de faux positifs. 
+Ce modèle constitue une baseline qui servira de référence pour comparer les modèles plus avancés tels que Decision Tree, Random Forest et XGBoost.
+
+Difficultés rencontrés
+
+Compréhension de l'interprétation des métriques d'évaluation (Accuracy, Precision, Recall, F1-score) et de leur importance dans un problème médical.
 
 ## Pour la suite 
-Les prochaines étapes consisteront à la construction d'un pipeline complet de préparation des données et d'appliquer nos variables à différents modèles de machine learning.
 
+Comparer plusieurs modèles de Machine Learning et sélectionner celui offrant le meilleur compromis entre détection des AVC (Recall) et réduction des faux positifs (Precision).
 
