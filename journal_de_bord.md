@@ -180,7 +180,10 @@ Les performances montrent une accuracy élevée (88,7 %), mais une analyse déta
 Cette étape confirme l'importance de ne pas se limiter à l'accuracy pour évaluer un modèle sur un jeu de données déséquilibré. 
 La comparaison avec la Régression Logistique montre que cette dernière reste plus adaptée au contexte médical grâce à son rappel beaucoup plus élevé, malgré un nombre plus important de faux positifs.
 
-
+### Random Forest
+- Entraînement et évaluation d'un modèle Random Forest. 
+Malgré une accuracy élevée de 92,3 %, l'analyse détaillée montre un recall de seulement 10 % sur la classe AVC. Le modèle détecte correctement la majorité des patients sains mais échoue à identifier la plupart des patients réellement victimes d'un AVC (45 faux négatifs sur 50 cas). Cette expérience confirme que l'accuracy seule ne permet pas d'évaluer la qualité d'un modèle dans un contexte de données déséquilibrées. 
+Les paramètres par défaut de la Random Forest ne sont pas adaptés à notre problématique, ce qui justifie une future phase d'optimisation des hyperparamètres.
 
 ## Pour la suite 
 
