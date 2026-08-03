@@ -173,6 +173,15 @@ Difficultés rencontrés
 
 Compréhension de l'interprétation des métriques d'évaluation (Accuracy, Precision, Recall, F1-score) et de leur importance dans un problème médical.
 
+# Jour 13: Entrainement d'autres modèles
+### Decision Tree
+- Entraînement et évaluation d'un modèle Decision Tree
+Les performances montrent une accuracy élevée (88,7 %), mais une analyse détaillée révèle un recall de seulement 26 % sur la classe AVC. Le modèle identifie correctement la majorité des patients sains, mais manque une grande partie des patients réellement victimes d'un AVC (37 faux négatifs sur 50 cas). 
+Cette étape confirme l'importance de ne pas se limiter à l'accuracy pour évaluer un modèle sur un jeu de données déséquilibré. 
+La comparaison avec la Régression Logistique montre que cette dernière reste plus adaptée au contexte médical grâce à son rappel beaucoup plus élevé, malgré un nombre plus important de faux positifs.
+
+
+
 ## Pour la suite 
 
 Comparer plusieurs modèles de Machine Learning et sélectionner celui offrant le meilleur compromis entre détection des AVC (Recall) et réduction des faux positifs (Precision).
