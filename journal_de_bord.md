@@ -197,7 +197,13 @@ Cette étape confirme une nouvelle fois que l'accuracy seule ne permet pas d'év
 
 Une optimisation des hyperparamètres sera nécessaire afin d'améliorer les performances du modèle sur la classe minoritaire.
 
+- Sauvegarde des modèles entraînés au format .pkl à l'aide de joblib,
+Ce qui va me permettre de réutiliser les modèles sans avoir à les réentraîner.
+
+- Sauvegarde de l'encoder et du scaler pour garder le format.
+
+
 ## Pour la suite 
 
-Comparer plusieurs modèles de Machine Learning et sélectionner celui offrant le meilleur compromis entre détection des AVC (Recall) et réduction des faux positifs (Precision).
+Optimisation d'hyperparamètres de nos modèles pour des résultats plus efficaces.
 
