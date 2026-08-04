@@ -185,6 +185,18 @@ La comparaison avec la Régression Logistique montre que cette dernière reste p
 Malgré une accuracy élevée de 92,3 %, l'analyse détaillée montre un recall de seulement 10 % sur la classe AVC. Le modèle détecte correctement la majorité des patients sains mais échoue à identifier la plupart des patients réellement victimes d'un AVC (45 faux négatifs sur 50 cas). Cette expérience confirme que l'accuracy seule ne permet pas d'évaluer la qualité d'un modèle dans un contexte de données déséquilibrées. 
 Les paramètres par défaut de la Random Forest ne sont pas adaptés à notre problématique, ce qui justifie une future phase d'optimisation des hyperparamètres.
 
+# Jour 14: Suite et Fin entrainement modèle
+### eXtreme Gradient Boost (XGBoost)
+
+- Entraînement et évaluation d'un modèle XGBoost
+Le modèle obtient la meilleure accuracy parmi les quatre modèles testés (93,2 %), 
+Son Recall reste faible (14 %). 
+Il identifie correctement la majorité des patients sains mais détecte seulement 7 des 50 patients réellement victimes d'un AVC. 
+La Precision atteint 21 %, ce qui signifie que lorsqu'il prédit un AVC, environ un patient sur cinq est effectivement malade. 
+Cette étape confirme une nouvelle fois que l'accuracy seule ne permet pas d'évaluer un modèle dans un contexte médical où la détection des patients à risque est prioritaire. 
+
+Une optimisation des hyperparamètres sera nécessaire afin d'améliorer les performances du modèle sur la classe minoritaire.
+
 ## Pour la suite 
 
 Comparer plusieurs modèles de Machine Learning et sélectionner celui offrant le meilleur compromis entre détection des AVC (Recall) et réduction des faux positifs (Precision).
