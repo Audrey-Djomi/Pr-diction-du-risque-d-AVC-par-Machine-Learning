@@ -202,8 +202,10 @@ Ce qui va me permettre de réutiliser les modèles sans avoir à les réentraîn
 
 - Sauvegarde de l'encoder et du scaler pour garder le format.
 
+# Jour 15 : Optimisation d'hyperparamètres de nos modèles : Regression Logistique et XGBoost 
+
 
 ## Pour la suite 
 
-Optimisation d'hyperparamètres de nos modèles pour des résultats plus efficaces.
+
 
