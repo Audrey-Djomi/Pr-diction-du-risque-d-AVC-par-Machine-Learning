@@ -169,7 +169,7 @@ Compétences développées
 La Régression Logistique détecte correctement la majorité des patients présentant un AVC avec un Recall élevé, ce qui est un point essentiel dans un contexte médical où il est préférable de limiter les faux négatifs. En revanche, la précision reste faible, ce qui traduit un nombre important de faux positifs. 
 Ce modèle constitue une baseline qui servira de référence pour comparer les modèles plus avancés tels que Decision Tree, Random Forest et XGBoost.
 
-Difficultés rencontrés
+## Difficultés rencontrés
 
 Compréhension de l'interprétation des métriques d'évaluation (Accuracy, Precision, Recall, F1-score) et de leur importance dans un problème médical.
 
@@ -202,7 +202,7 @@ Ce qui va me permettre de réutiliser les modèles sans avoir à les réentraîn
 
 - Sauvegarde de l'encoder et du scaler pour garder le format.
 
-# Jour 15 : Optimisation d'hyperparamètres de nos modèles : Regression Logistique et XGBoost 
+# Jour 15 -Jour 20 : Optimisation d'hyperparamètres de nos modèles : Regression Logistique et XGBoost 
 
 ### Optimisation de la Régression Logistique
 - Mise en œuvre de GridSearchCV
@@ -246,16 +246,35 @@ Ceci m'a permis de comprendre que :
     Bagging (Random Forest)
     Boosting (XGBoost).
 
-Difficultés rencontrées
+## Difficultés rencontrées
     Compréhension du fonctionnement de GridSearchCV et RandomizedSearchCV.
     Compréhension de la différence entre Random Forest et XGBoost.
 
+- Finaliser l'évaluation des modèles de Machine Learning et sélectionner le modèle le plus adapté au contexte médical.
+
+- Construire un tableau comparatif de tous les modèles et les métriques étudiées regroupant : 
+
+    - les performances de chaque modèle, 
+    - leurs points forts, 
+    - leurs limites et 
+    - leur domaine d'utilisation.
+
+- Création d'un graphique comparatif permettant de visualiser simultanément les quatre métriques pour chacun des modèles. Elle facilite l'interprétation des résultats et met en évidence les compromis entre Accuracy, Precision, Recall et F1-score.
+
+- Rédaction d'une analyse comparative mettant en évidence que :
+    une Accuracy élevée n'est pas suffisante pour sélectionner un modèle médical ;
+    le Recall est prioritaire afin de limiter les faux négatifs.
+
+- Choisir le modèle final: Deux modèles se distinguent 
+
+    - Régression Logistique optimisée, retenue comme modèle principal grâce à son Recall de 84 % ;
+    - XGBoost optimisé, retenu comme meilleure alternative grâce à son équilibre global entre les différentes métriques.
+
+- Rédiger la conclusion du projet qui englobe des limites du projet, des perspectives d'amélioration et la conclusion générale.
+
 ## Pour la suite 
 
-Construire un tableau comparatif final de tous les modèles.
-Réaliser une visualisation comparative des performances.
-Choisir le modèle final.
-Rédiger la conclusion du projet.
+
 Finaliser le README GitHub.
 
 
