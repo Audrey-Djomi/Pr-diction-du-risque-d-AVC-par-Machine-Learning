@@ -272,6 +272,15 @@ Ceci m'a permis de comprendre que :
 
 - Rédiger la conclusion du projet qui englobe des limites du projet, des perspectives d'amélioration et la conclusion générale.
 
+
+## Compétences acquises
+
+- comparaison de modèles de Machine Learning ,
+- interprétation des métriques de classification ,
+- optimisation des hyperparamètres ,
+- justification d'un choix de modèle selon un objectif métier ,
+- rédaction d'une analyse scientifique.
+
 ## Pour la suite 
 
 
