@@ -204,8 +204,58 @@ Ce qui va me permettre de réutiliser les modèles sans avoir à les réentraîn
 
 # Jour 15 : Optimisation d'hyperparamètres de nos modèles : Regression Logistique et XGBoost 
 
+### Optimisation de la Régression Logistique
+- Mise en œuvre de GridSearchCV
+- Compréhension du rôle de la validation croisée (cv=5)
+- Optimisation de l'hyperparamètre C
+- Meilleur paramètre obtenu : C=0.1
+
+Nous avons obtenu:
+- Recall légèrement amélioré (82 % -> 84 %)
+- Accuracy presque inchangée
+- La Régression Logistique reste très performante pour la détection des patients AVC.
+
+### Optimisation de XGBoost
+
+- Découverte de RandomizedSearchCV.
+
+- Compréhension des principaux hyperparamètres :
+    n_estimators
+    max_depth
+    learning_rate
+    subsample
+    colsample_bytree
+
+Meilleurs paramètres obtenus :
+    subsample = 0.8
+    n_estimators = 200
+    max_depth = 5
+    learning_rate = 0.01
+    colsample_bytree = 1.0
+
+Nous avons obtenu :
+    Recall = 70 %
+Cette optimisation a permis une amélioration très importante de la détection des patients ayant réellement subi un AVC.
+
+Ceci m'a permis de comprendre que :
+
+- une Accuracy élevée ne signifie pas forcément qu'un modèle est le meilleur,
+- le choix des métriques dépend du contexte métier ,
+- dans le domaine médical, le Recall est prioritaire afin de limiter les faux négatifs.
+- J'ai également compris la différence entre :
+    Bagging (Random Forest)
+    Boosting (XGBoost).
+
+Difficultés rencontrées
+    Compréhension du fonctionnement de GridSearchCV et RandomizedSearchCV.
+    Compréhension de la différence entre Random Forest et XGBoost.
 
 ## Pour la suite 
 
+Construire un tableau comparatif final de tous les modèles.
+Réaliser une visualisation comparative des performances.
+Choisir le modèle final.
+Rédiger la conclusion du projet.
+Finaliser le README GitHub.
 
 
