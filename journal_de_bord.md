@@ -281,8 +281,20 @@ Ceci m'a permis de comprendre que :
 - justification d'un choix de modèle selon un objectif métier ,
 - rédaction d'une analyse scientifique.
 
-## Pour la suite 
+# Jour 21: Finalisation du projet et vérification
 
-Finaliser le README GitHub.
+- Création d'un graphique comparatif des performances des modèles.
+- Export des figures au format PNG dans le repertoire reports/figures.
+- Mise à jour du README complet.
+- Vérification de l'ensemble du projet :
+    Organisation de l'arborescence du projet,
+    Export des modèles optimisés,
+    Vérification des fichiers nécessaires à la publication.
+
+# Bilan personnel
+
+Ce projet m'a permis de conduire un projet complet de Machine Learning, depuis la préparation des données jusqu'à l'évaluation et à la documentation des résultats. Il m'a également permis de faire des recherches, d'approfondir l'interprétation des métriques de classification et de comprendre l'importance d'adapter le choix d'un modèle aux besoins métier, en particulier dans le domaine de la santé.
+
+
 
 
