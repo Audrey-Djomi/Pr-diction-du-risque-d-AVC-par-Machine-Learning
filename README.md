@@ -16,29 +16,6 @@ L'objectif de ce projet est de développer un modèle de Machine Learning capabl
 * Comparer leurs performances,
 * Sélectionner le modèle le plus adapté au contexte médical.
 
-📂 Structure du projet
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── models/
-│
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_preprocessing.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_model_training.ipynb
-│   └── 05_model_evaluation.ipynb
-│
-├── reports/
-│   ├── model_evaluation_summary.md
-│   └── figures/
-│
-├── .gitignore
-├── journal_de_bord.md
-├── README.md
-└── requirements.txt
-
 ## Technologies
 
 - Python
@@ -94,14 +71,14 @@ Le Recall a été privilégié afin de limiter les faux négatifs et d'identifie
 
 ## Modèle retenu
 
-✅ Régression Logistique optimisée
+ Régression Logistique optimisée
 
 Recall : 84 %
 Modèle privilégié pour une stratégie de dépistage.
 
 Alternative
 
-✅ XGBoost optimisé
+ XGBoost optimisé
 
 Recall : 70 %
 Meilleur compromis entre Accuracy, Precision, Recall et F1-score.
@@ -140,9 +117,9 @@ Data Analyst | Machine Learning |
 GitHub : https://github.com/Audrey-Djomi
 
 
-👩‍💻 À propos
+## À propos
 
 Projet réalisé dans le cadre de ma reconversion vers les métiers de la Data, avec pour objectif de mettre en pratique une démarche complète de Machine Learning, de la préparation des données jusqu'à l'évaluation et la sélection du modèle.
 
 
-👩‍💻 Projet Terminé
+Projet Terminé
