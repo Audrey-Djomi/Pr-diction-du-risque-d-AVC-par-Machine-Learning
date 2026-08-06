@@ -135,7 +135,7 @@ Les pistes d'amélioration envisagées sont :
 
 **Audrey DJOMI**
 
-Data Analyst | Machine Learning | Data Engineering (en reconversion)
+Data Analyst | Machine Learning |
 
 GitHub : https://github.com/Audrey-Djomi
 
