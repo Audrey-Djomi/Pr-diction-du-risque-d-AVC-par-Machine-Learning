@@ -283,7 +283,6 @@ Ceci m'a permis de comprendre que :
 
 ## Pour la suite 
 
-
 Finaliser le README GitHub.
 
 
